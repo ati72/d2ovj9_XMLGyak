@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <meta charset='UTF-8'>
     <title>XML To HTML using codebeautify.org</title>
 </head>
 
 <style>
-
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
-    body{
+    body {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #253022;
         color: #507844;
-        font-family: 'Open Sans'  ,Tahoma;
+        font-family: 'Open Sans', Tahoma;
         font-weight: 700;
     }
 
@@ -48,19 +48,18 @@
         background-color: #293d23;
     }
 
-    tbody tr:hover {
-        background-color: #3c5a32;
-        color: #3a1c24;
-    }
-
-    tbody td:hover{
+    tbody tr:hover, .madeBy:hover {
         background-color: #32465a;
         color: #fff;
+        box-shadow: #212d3a -1px 1px, #212d3a -2px 2px, #212d3a -3px 3px, #212d3a -4px 4px, #212d3a -5px 5px, #212d3a -6px 6px;
+        transform: translate3d(6px, -6px, 0);
+        transition-delay: 0s;
+        transition-duration: 0.4s;
+        transition-property: all;
+        transition-timing-function: line;
     }
 
-
-
-    .madeBy{
+    .madeBy {
         font-style: italic;
         font-weight: bold;
         color: #813b23;
@@ -72,12 +71,11 @@
         font-size: 48px;
         text-transform: uppercase;
     }
-
 </style>
 
 <body>
     <h1 class="title">Orarend</h1>
-    <table>   <!--ebből a tagből kiszedtem: border=1-->
+    <table> 
         <thead>
             <tr>
                 <th>targy</th>
@@ -291,7 +289,7 @@
             <tr>
                 <td colspan="7" class="madeBy">Készítette: Hegedűs Attila László</td>
             </tr>
-          <!--   <tr>
+            <!--   <tr>
                 <td></td>
                 <td>&nbsp</td>
                 <td>&nbsp</td>
