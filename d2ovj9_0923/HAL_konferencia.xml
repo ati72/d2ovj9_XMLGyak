@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+	<cim>Mitől zöld a fű?</cim>
+	<hallgatok>
+		<hallgato>Kiss Béla</hallgato>
+	</hallgatok>
+	<helyszin>3300 Eger</helyszin>
+	<eloado>
+		<nev>Nagy István</nev>
+		<lakcim>3300 Eger, Széchenyi út 33</lakcim>
+		<adoszam>0123456789</adoszam>
+	</eloado>
+	<datum>2022.10.10</datum>
+</konferencia>
