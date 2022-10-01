@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE orarend SYSTEM "orarend.dtd">
+
+<orarend>
+    <ora id="ora_ivr_1" tipus="jelenleti">
+        <targy>Integrált vállalati rendszerek</targy>
+        <idopont>
+            <nap>2022.09.09</nap>
+            <tol>12.30</tol>
+            <ig>15.50</ig>
+        </idopont>
+        <helyszin>In/15</helyszin>
+        <oktato>Dr. Samad Dadvandipour</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_ivr_2" tipus="jelenleti">
+        <targy>Integrált vállalati rendszerek</targy>
+        <idopont>
+            <nap>2022.09.09</nap>
+            <tol>16.00</tol>
+            <ig>19.30</ig>
+        </idopont>
+        <helyszin>In/15</helyszin>
+        <oktato>Dr. Samad Dadvandipour</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_xml_1" tipus="jelenleti">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>2022.09.23</nap>
+            <tol>12.30</tol>
+            <ig>15.50</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_webJava_1" tipus="jelenleti">
+        <targy>Web-es alkalmazások (JAVA)</targy>
+        <idopont>
+            <nap>2022.09.23</nap>
+            <tol>16.00</tol>
+            <ig>19.30</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_webJava_2" tipus="jelenleti">
+        <targy>Web-es alkalmazások (JAVA)</targy>
+        <idopont>
+            <nap>2022.09.24</nap>
+            <tol>8.30</tol>
+            <ig>11.50</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_webJava_3" tipus="jelenleti">
+        <targy>Web-es alkalmazások (JAVA)</targy>
+        <idopont>
+            <nap>2022.09.24</nap>
+            <tol>12.20</tol>
+            <ig>15.40</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_webJava_4" tipus="jelenleti">
+        <targy>Web-es alkalmazások (JAVA)</targy>
+        <idopont>
+            <nap>2022.09.24</nap>
+            <tol>16.00</tol>
+            <ig>19.20</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_mestInt_1" tipus="jelenleti">
+        <targy>Mesterséges intelligencia alapok</targy>
+        <idopont>
+            <nap>2022.09.30</nap>
+            <tol>12.30</tol>
+            <ig>15.50</ig>
+        </idopont>
+        <helyszin>A1/317</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_mestInt_2" tipus="jelenleti">
+        <targy>Mesterséges intelligencia alapok</targy>
+        <idopont>
+            <nap>2022.09.30</nap>
+            <tol>16.00</tol>
+            <ig>19.30</ig>
+        </idopont>
+        <helyszin>A1/317</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_xml_2" tipus="online">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>2022.10.07</nap>
+            <tol>12.30</tol>
+            <ig>15.50</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_ivr_3" tipus="online">
+        <targy>Integrált vállalati rendszerek</targy>
+        <idopont>
+            <nap>2022.10.07</nap>
+            <tol>16.00</tol>
+            <ig>19.30</ig>
+        </idopont>
+        <helyszin>In/15</helyszin>
+        <oktato>Dr. Samad Dadvandipour</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_mestInt_3" tipus="online">
+        <targy>Mesterséges intelligencia alapok</targy>
+        <idopont>
+            <nap>2022.10.08</nap>
+            <tol>8.30</tol>
+            <ig>11.50</ig>
+        </idopont>
+        <helyszin>In/15</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_winGazda_1" tipus="online">
+        <targy>Windows rendszergazda</targy>
+        <idopont>
+            <nap>2022.10.08</nap>
+            <tol>12.20</tol>
+            <ig>15.40</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Wagner György</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_ivr_4" tipus="online">
+        <targy>Integrált vállalati rendszerek</targy>
+        <idopont>
+            <nap>2022.10.14</nap>
+            <tol>12.30</tol>
+            <ig>15.50</ig>
+        </idopont>
+        <helyszin>In/15</helyszin>
+        <oktato>Dr. Samad Dadvandipour</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_mestInt_4" tipus="online">
+        <targy>Mesterséges intelligencia alapok</targy>
+        <idopont>
+            <nap>2022.10.14</nap>
+            <tol>16.00</tol>
+            <ig>19.30</ig>
+        </idopont>
+        <helyszin>In/15</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_winGazda_2" tipus="online">
+        <targy>Windows rendszergazda</targy>
+        <idopont>
+            <nap>2022.10.15</nap>
+            <tol>8.30</tol>
+            <ig>11.50</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Wagner György</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_xml_3" tipus="online">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>2022.10.21</nap>
+            <tol>12.30</tol>
+            <ig>15.50</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_winGazda_3" tipus="online">
+        <targy>Windows rendszergazda</targy>
+        <idopont>
+            <nap>2022.10.21</nap>
+            <tol>16.00</tol>
+            <ig>19.30</ig>
+        </idopont>
+        <helyszin>In/102</helyszin>
+        <oktato>Wagner György</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_webTech_1" tipus="online">
+        <targy>Web technológiák I.</targy>
+        <idopont>
+            <nap>2022.10.22</nap>
+            <tol>8.30</tol>
+            <ig>15.30</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_webTech_2" tipus="online">
+        <targy>Web technológiák I.</targy>
+        <idopont>
+            <nap>2022.11.05</nap>
+            <tol>8.30</tol>
+            <ig>15.30</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_xml_4" tipus="online">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>2022.11.18</nap>
+            <tol>12.30</tol>
+            <ig>15.50</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="ora_winGazda_4" tipus="online">
+        <targy>Windows rendszergazda</targy>
+        <idopont>
+            <nap>2022.11.18</nap>
+            <tol>16.00</tol>
+            <ig>19.30</ig>
+        </idopont>
+        <helyszin>In/102</helyszin>
+        <oktato>Wagner György</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+
+</orarend>
