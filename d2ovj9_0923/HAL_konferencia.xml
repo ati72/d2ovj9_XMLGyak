@@ -3,9 +3,12 @@
 <konferencia>
 	<cim>Mitől zöld a fű?</cim>
 	<hallgatok>
-		<hallgato>Kiss Béla</hallgato>
+		<hallgato>
+			<nev>Kiss Béla</nev>
+			<lakcim>3300 Eger, Deák Ferenc út 22</lakcim>
+		</hallgato>
 	</hallgatok>
-	<helyszin>3300 Eger</helyszin>
+	<helyszin>3300 Eger, Dobó tér</helyszin>
 	<eloado>
 		<nev>Nagy István</nev>
 		<lakcim>3300 Eger, Széchenyi út 33</lakcim>
