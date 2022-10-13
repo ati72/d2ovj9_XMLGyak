@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nevjegykartyak>
+	<nevjegykartya id="njk_001">
+		<nev>Kiss Pista</nev>
+		<ceg>
+			<cim>
+				<iranyitoszam>1000</iranyitoszam>
+				<varos>Budapest</varos>
+				<utca>Ajtósi Dürer sor</utca>
+				<hazszam>33</hazszam>
+			</cim>
+			<nev>QWERTZ KFT</nev>
+			<telefonszam korzet="06-1">123456789</telefonszam>
+			<weblap>www.qwertzkft.hu</weblap>
+		</ceg>
+		<beosztas>Regionális Menedzser Asszisztens</beosztas>
+		<telefonszam korzet="+36-20">1212345</telefonszam>
+		<email>kisspista@citromail.hu</email>
+	</nevjegykartya>
+	<nevjegykartya id="njk_234">
+		<nev>Nagy István</nev>
+		<ceg>
+			<cim>
+				<iranyitoszam>1000</iranyitoszam>
+				<varos>Budapest</varos>
+				<utca>Kerepesi út</utca>
+				<hazszam>56</hazszam>
+			</cim>
+			<nev>PC SW HW</nev>
+			<telefonszam korzet="06-1">987654321</telefonszam>
+			<weblap>www.pcswhw.hu</weblap>
+		</ceg>
+		<beosztas>Tulajdonos</beosztas>
+		<telefonszam korzet="+36-70">1212846</telefonszam>
+		<email>nagyistvan@pcswhw.hu</email>
+	</nevjegykartya>
+	<nevjegykartya id="njk_069">
+		<nev>Kovács László</nev>
+		<ceg>
+			<cim>
+				<iranyitoszam>1000</iranyitoszam>
+				<varos>Budapest</varos>
+				<utca>Szentkirályi út</utca>
+				<hazszam>13</hazszam>
+			</cim>
+			<nev>Sütibolt</nev>
+			<telefonszam korzet="06-1">33333333</telefonszam>
+			<weblap>wwwsutibolt.hu</weblap>
+		</ceg>
+		<beosztas>Tulajdonos</beosztas>
+		<telefonszam korzet="+36-70">1212846</telefonszam>
+		<email>klaci@sutibolt.hu</email>
+	</nevjegykartya>
+</nevjegykartyak>
