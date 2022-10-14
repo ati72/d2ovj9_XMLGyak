@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Cim elemei kiemelve -->
+  <xs:element name="iranyitoszam" type="xs:short"/>
+  <xs:element name="varos" type="xs:string"/>
+  <xs:element name="utca" type="xs:string"/>
+  <xs:element name="hazszam" type="xs:byte"/>  
+<!-- Cim hivatkozasokkal behelyettesítve--> 
+  <xs:element name="cim">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="iranyitoszam"/>
+        <xs:element ref="varos"/>
+        <xs:element ref="utca"/>
+        <xs:element ref="hazszam"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>  
+  <xs:element name="nev" type="xs:string"/>
+  <xs:element name="telefonszam">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:int">
+          <xs:attribute name="korzet" type="xs:string"  use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>  
+  <xs:element name="weblap" type="xs:string"/>
+  <!-- Ceg hivatkozasokkal behelyettesitve -->
+  <xs:element name="ceg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cim"/>
+        <xs:element ref="nev"/>
+        <xs:element ref="telefonszam"/>
+        <xs:element ref="weblap"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="beosztas" type="xs:string"/>
+  <xs:element name="email" type="xs:string"/>
+  <!-- Nevjegykartya hivatkozasokkal behelyettesitve -->
+  <xs:element name="nevjegykartya">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nev"/>
+        <xs:element ref="ceg"/>
+        <xs:element ref="beosztas"/>
+        <xs:element ref="telefonszam"/>
+        <xs:element ref="email"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- Gyoker -->
+  <xs:element name="nevjegykartyak">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nevjegykartya" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
