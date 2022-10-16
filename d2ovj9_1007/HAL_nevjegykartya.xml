@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
 
-<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceschemaLocation="urn:Test.Namespace HAL_nevjegykartya.xsd">
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="HAL_nevjegykartya.xsd">
 	<nevjegykartya id="njk_001">
 		<nev>Kiss Pista</nev>
 		<ceg>
