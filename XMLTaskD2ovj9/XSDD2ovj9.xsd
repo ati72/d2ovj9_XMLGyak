@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="adatok">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tulajdonos" type="tulaj_type" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element name="kiado" type="kiado_type" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element name="zenekar" type="zenekar_type" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element name="zenesz" type="zenesz_type" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element name="hangszer" type="hangszer_type" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element name="hangszerismeret" type="hangszerismeret_type" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		
+		<!-- Kulcsok -->
+		<!-- Tulaj -->
+		<xs:key name="tulaj_ID">
+            <xs:selector xpath=".//tulajdonos" />
+            <xs:field xpath="@ID" />
+        </xs:key>
+        <xs:keyref name="tulaj_ID_ref" refer="tulaj_ID">
+            <xs:selector xpath=".//kiado" />
+            <xs:field xpath="@tulaj_ID" />
+        </xs:keyref>
+		<!-- Kiado -->
+		<xs:key name="kiado_ID">
+            <xs:selector xpath=".//kiado" />
+            <xs:field xpath="@ID" />
+        </xs:key>
+        <xs:keyref name="kiado_ID_ref" refer="kiado_ID">
+            <xs:selector xpath=".//zenekar" />
+            <xs:field xpath="@kiado_ID" />
+        </xs:keyref>
+		<!-- Zenekar -->
+		<xs:key name="zenekar_ID">
+            <xs:selector xpath=".//zenekar" />
+            <xs:field xpath="@ID" />
+        </xs:key>
+        <xs:keyref name="zenekar_ID_ref" refer="zenekar_ID">
+            <xs:selector xpath=".//zenesz" />
+            <xs:field xpath="@zenekar_ID" />
+        </xs:keyref>
+		<!-- Zenesz -->
+		<xs:key name="zenesz_ID">
+            <xs:selector xpath=".//zenesz" />
+            <xs:field xpath="@ID" />
+        </xs:key>
+        <xs:keyref name="zenesz_ID_ref" refer="zenesz_ID">
+            <xs:selector xpath=".//hangszerismeret" />
+            <xs:field xpath="@zenesz_ID" />
+        </xs:keyref>
+		<!-- Hangszer -->
+		<xs:key name="hangszer_ID">
+            <xs:selector xpath=".//hangszer" />
+            <xs:field xpath="@ID" />
+        </xs:key>
+        <xs:keyref name="hangszer_ID_ref" refer="hangszer_ID">
+            <xs:selector xpath=".//hangszerismeret" />
+            <xs:field xpath="@hangszer_ID" />
+        </xs:keyref>
+	</xs:element>
+	
+	
+	<!-- Sajat tipusok -->
+	<!-- Tulaj -->
+	<xs:complexType name="tulaj_type">
+		<xs:sequence>
+			<xs:element name="vezeteknev" type="xs:string"/>
+			<xs:element name="keresztnev" type="xs:string"/>
+			<xs:element name="telefonszam" type="xs:string"/>
+			<xs:element name="email" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="required"/>
+	</xs:complexType>
+	<!-- Kiado -->
+	<xs:complexType name="kiado_type">
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string"/>
+			<xs:element name="telephely" type="xs:string"/>
+			<xs:element name="email" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="required"/>
+		<xs:attribute name="tulaj_ID" type="xs:string" use="required"/>
+	</xs:complexType>
+	<!-- Zenekar -->
+	<xs:complexType name="zenekar_type">
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string"/>
+			<xs:element name="alakult" type="xs:string"/>
+			<xs:element name="mufaj" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="required"/>
+		<xs:attribute name="kiado_ID" type="xs:string" use="required"/>
+	</xs:complexType>
+	<!-- Zenesz -->
+	<xs:complexType name="zenesz_type">
+		<xs:sequence>
+			<xs:element name="vezeteknev" type="xs:string"/>
+			<xs:element name="keresztnev" type="xs:string"/>
+			<xs:element name="szuletett" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="required"/>
+		<xs:attribute name="zenekar_ID" type="xs:string" use="required"/>
+	</xs:complexType>
+	<!-- Hangszer -->
+	<xs:complexType name="hangszer_type">
+		<xs:sequence>
+			<xs:element name="gyarto" type="xs:string"/>
+			<xs:element name="tipus" type="xs:string"/>
+			<xs:element name="osztaly" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="required"/>
+	</xs:complexType>
+	<!-- Hangszerismeret -->
+	<xs:complexType name="hangszerismeret_type">
+		<xs:sequence>
+			<xs:element name="ideje" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="hangszer_ID" type="xs:string" use="required"/>
+		<xs:attribute name="zenesz_ID" type="xs:string" use="required"/>
+	</xs:complexType>
+</xs:schema>
