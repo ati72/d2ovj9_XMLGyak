@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<adatok xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSDD2ovj9.xsd">
+	<!-- Tulajok -->
+	<tulajdonos ID="tul-01">
+		<vezeteknev>Major</vezeteknev>
+		<keresztnev>Anna</keresztnev>
+		<telefonszam>06201234567</telefonszam>
+		<email>majoranna@gmail.com</email>
+	</tulajdonos>
+	<tulajdonos ID="tul-02">
+		<vezeteknev>Feles</vezeteknev>
+		<keresztnev>Elek</keresztnev>
+		<telefonszam>06309877654</telefonszam>
+		<email>feles@elek.hu</email>
+	</tulajdonos>
+	<tulajdonos ID="tul-03">
+		<vezeteknev>Ultra</vezeteknev>
+		<keresztnev>Viola</keresztnev>
+		<telefonszam>06709844565</telefonszam>
+		<email>ultrav@gmail.com</email>
+	</tulajdonos>
+	<!-- Kiadók -->
+	<kiado ID="kia-01" tulaj_ID="tul-01">
+		<nev>Major Records</nev>
+		<telephely>Eger, Széchenyi út 20</telephely>
+		<email>majorrecords@gmail.com</email>
+	</kiado>
+	<kiado ID="kia-02" tulaj_ID="tul-02">
+		<nev>Feles Music</nev>
+		<telephely>Budapest, Rákóczi út 32</telephely>
+		<email>feles_music@gmail.com</email>
+	</kiado>
+	<kiado ID="kia-03" tulaj_ID="tul-03">
+		<nev>Ultra Sound</nev>
+		<telephely>Székesfehérvár, Kárpát út 13</telephely>
+		<email>ultrasound@hotmail.com</email>
+	</kiado>
+	<!-- Zenekarok -->
+	<zenekar ID="zk-01" kiado_ID='kia-01'>
+		<nev>Admin</nev>
+		<alakult>1999</alakult>
+		<mufaj>Rock</mufaj>
+	</zenekar>
+	<zenekar ID="zk-02" kiado_ID='kia-02'>
+		<nev>Quake</nev>
+		<alakult>2009</alakult>
+		<mufaj>Punk</mufaj>
+	</zenekar>
+	<zenekar ID="zk-03" kiado_ID='kia-03'>
+		<nev>Algoritmus</nev>
+		<alakult>1986</alakult>
+		<mufaj>Alternatív</mufaj>
+	</zenekar>
+	<!-- Zeneszek -->
+	<zenesz ID="zen-01" zenekar_ID="zk-01">
+		<vezeteknev>Para</vezeteknev>
+		<keresztnev>Zita</keresztnev>
+		<szuletett>1980</szuletett>
+	</zenesz>
+	<zenesz ID="zen-02" zenekar_ID="zk-02">
+		<vezeteknev>Git</vezeteknev>
+		<keresztnev>Áron</keresztnev>
+		<szuletett>1990</szuletett>
+	</zenesz>
+	<zenesz ID="zen-03" zenekar_ID="zk-03">
+		<vezeteknev>Techno</vezeteknev>
+		<keresztnev>Kolos</keresztnev>
+		<szuletett>1969</szuletett>
+	</zenesz>
+	<!-- Hangszerek -->
+	<hangszer ID="hsz-01">
+		<gyarto>Roland</gyarto>
+		<tipus>FP-30X</tipus>
+		<osztaly>Billentyűs</osztaly>
+	</hangszer>
+	<hangszer ID="hsz-02">
+		<gyarto>Fender</gyarto>
+		<tipus>Stratocaster</tipus>
+		<osztaly>Gitár</osztaly>
+	</hangszer>
+	<hangszer ID="hsz-03">
+		<gyarto>Pearl</gyarto>
+		<tipus>Roadshow</tipus>
+		<osztaly>Dob</osztaly>
+	</hangszer>
+	<!-- Hangszerismeret -->
+	<hangszerismeret hangszer_ID="hsz-01" zenesz_ID="zen-01">
+		<ideje>5</ideje>
+	</hangszerismeret>
+	<hangszerismeret hangszer_ID="hsz-02" zenesz_ID="zen-02">
+		<ideje>3</ideje>
+	</hangszerismeret>
+	<hangszerismeret hangszer_ID="hsz-03" zenesz_ID="zen-03">
+		<ideje>20</ideje>
+	</hangszerismeret>
+</adatok>
