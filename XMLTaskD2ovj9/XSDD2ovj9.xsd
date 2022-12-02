@@ -13,7 +13,7 @@
 			</xs:sequence>
 		</xs:complexType>
 		
-		<!-- Kulcsok -->
+		<!-- Kulcsok (Kulcs és rámutató idegen kulcs párokban)-->
 		<!-- Tulaj -->
 		<xs:key name="tulaj_ID">
             <xs:selector xpath=".//tulajdonos" />
@@ -59,6 +59,12 @@
             <xs:selector xpath=".//hangszerismeret" />
             <xs:field xpath="@hangszer_ID" />
         </xs:keyref>
+		<!-- 1:1 Kapcs -->
+		<xs:unique name="egy_tulaj">
+            <xs:selector xpath=".//kiado"></xs:selector>
+            <xs:field xpath="@tulaj_ID"></xs:field>
+        </xs:unique>
+
 	</xs:element>
 	
 	
@@ -99,6 +105,7 @@
 			<xs:element name="vezeteknev" type="xs:string"/>
 			<xs:element name="keresztnev" type="xs:string"/>
 			<xs:element name="szuletett" type="xs:string"/>
+			<xs:element name="nem" type="nem_type"/>
 		</xs:sequence>
 		<xs:attribute name="ID" type="xs:string" use="required"/>
 		<xs:attribute name="zenekar_ID" type="xs:string" use="required"/>
@@ -116,8 +123,23 @@
 	<xs:complexType name="hangszerismeret_type">
 		<xs:sequence>
 			<xs:element name="ideje" type="xs:string"/>
+			<xs:element name="szint" type="szint_type"/>
 		</xs:sequence>
 		<xs:attribute name="hangszer_ID" type="xs:string" use="required"/>
 		<xs:attribute name="zenesz_ID" type="xs:string" use="required"/>
 	</xs:complexType>
+	<!-- Egyszeru tipusok a tobberteku egyedekhez -->
+	<xs:simpleType name="szint_type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Virtuóz"/>
+            <xs:enumeration value="Tapasztalt"/>
+            <xs:enumeration value="Alibi"/>
+        </xs:restriction>
+    </xs:simpleType>
+	<xs:simpleType name="nem_type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="F"/>
+            <xs:enumeration value="N"/>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>

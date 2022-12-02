@@ -57,16 +57,19 @@
 		<vezeteknev>Para</vezeteknev>
 		<keresztnev>Zita</keresztnev>
 		<szuletett>1980</szuletett>
+		<nem>N</nem>
 	</zenesz>
 	<zenesz ID="zen-02" zenekar_ID="zk-02">
 		<vezeteknev>Git</vezeteknev>
 		<keresztnev>Áron</keresztnev>
 		<szuletett>1990</szuletett>
+		<nem>F</nem>
 	</zenesz>
 	<zenesz ID="zen-03" zenekar_ID="zk-03">
 		<vezeteknev>Techno</vezeteknev>
 		<keresztnev>Kolos</keresztnev>
 		<szuletett>1969</szuletett>
+		<nem>F</nem>
 	</zenesz>
 	<!-- Hangszerek -->
 	<hangszer ID="hsz-01">
@@ -87,11 +90,14 @@
 	<!-- Hangszerismeret -->
 	<hangszerismeret hangszer_ID="hsz-01" zenesz_ID="zen-01">
 		<ideje>5</ideje>
+		<szint>Virtuóz</szint>
 	</hangszerismeret>
 	<hangszerismeret hangszer_ID="hsz-02" zenesz_ID="zen-02">
 		<ideje>3</ideje>
+		<szint>Alibi</szint>
 	</hangszerismeret>
 	<hangszerismeret hangszer_ID="hsz-03" zenesz_ID="zen-03">
 		<ideje>20</ideje>
+		<szint>Tapasztalt</szint>
 	</hangszerismeret>
 </adatok>
