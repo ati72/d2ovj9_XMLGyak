@@ -201,7 +201,17 @@
     </hangszerismeret>
     
     <tulajdonos ID="UJ-TULAJ">
-        <vezeteknev>Miklós</vezeteknev>
-        <keresztnev>Béla</keresztnev>
+        <vezeteknev>Mikl�s</vezeteknev>
+        <keresztnev>B�la</keresztnev>
     </tulajdonos>
+    <zenekar ID="UJ-ZENEKAR" kiado_ID="kia-01">
+        <nev>LGT</nev>
+        <alakult>1971</alakult>
+        <mufaj>Rock</mufaj>
+    </zenekar>
+    <hangszer ID="UJ-HANGSZER">
+        <gyarto>Fender</gyarto>
+        <tipus>Telecaster</tipus>
+        <osztaly>Rock</osztaly>
+    </hangszer>
 </adatok>
