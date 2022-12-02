@@ -88,6 +88,41 @@ public class DomModifyD2ovj9 {
 		newOwner.appendChild(lName);
 		root.appendChild(newOwner);
 	}
+	
+	public static void addBand(Document doc) {
+		//Tulaj hozzáadása
+		Element root = doc.getDocumentElement();
+		Element newBand = doc.createElement("zenekar");
+		newBand.setAttribute("ID", "UJ-ZENEKAR");
+		newBand.setAttribute("kiado_ID", "kia-01");
+		Element bName = doc.createElement("nev");
+		bName.setTextContent("LGT");
+		Element founded = doc.createElement("alakult");
+		founded.setTextContent("1971");
+		Element genre = doc.createElement("mufaj");
+		genre.setTextContent("Rock");
+		newBand.appendChild(bName);
+		newBand.appendChild(founded);
+		newBand.appendChild(genre);
+		root.appendChild(newBand);
+	}
+	
+	public static void addInstrument(Document doc) {
+		//Tulaj hozzáadása
+		Element root = doc.getDocumentElement();
+		Element newInstrument = doc.createElement("hangszer");
+		newInstrument.setAttribute("ID", "UJ-HANGSZER");
+		Element bName = doc.createElement("gyarto");
+		bName.setTextContent("Fender");
+		Element type = doc.createElement("tipus");
+		type.setTextContent("Telecaster");
+		Element className = doc.createElement("osztaly");
+		className.setTextContent("Rock");
+		newInstrument.appendChild(bName);
+		newInstrument.appendChild(type);
+		newInstrument.appendChild(className);
+		root.appendChild(newInstrument);
+	}
 
 	public static void main(String[] args) {
 		
@@ -97,6 +132,8 @@ public class DomModifyD2ovj9 {
 			editOwnerName(doc);
 			deleteOwner(doc);
 			addOwner(doc);
+			addBand(doc);
+			addInstrument(doc);
 			executeEdit(doc);
 			
 		} catch (Exception e) {

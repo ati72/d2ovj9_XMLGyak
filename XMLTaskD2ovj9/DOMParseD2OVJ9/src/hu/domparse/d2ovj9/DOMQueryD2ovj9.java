@@ -105,11 +105,15 @@ public class DOMQueryD2ovj9 {
 				Node node3 = elem.getElementsByTagName("szuletett").item(0);
 				String born = node3.getTextContent();
 				
+				Node node4 = elem.getElementsByTagName("nem").item(0);
+				String gender = node4.getTextContent();
+				
 				System.out.println("ID: "+ uid);
 				System.out.println("Zenekar ID: " + fkeyBand);
 				System.out.println("Vezetéknév: " + fname);
 				System.out.println("Keresztnév: " + lname);
 				System.out.println("Született: " + born);
+				System.out.println("Nem: " + gender);
 				System.out.println("===============================================");
 				elementCount++;
 			}
